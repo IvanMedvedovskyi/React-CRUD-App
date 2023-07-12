@@ -1,0 +1,137 @@
+body {
+    background: #1b2631;
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
+  
+  .div_table {
+    width: 100%;
+  }
+  table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+  }
+  th {
+    background: #f8e391;
+    color: black;
+    text-shadow: 0 1px 1px #2d2020;
+    padding: 10px 20px;
+  }
+  th,
+  td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+  }
+  th:first-child,
+  td:first-child {
+    text-align: left;
+  }
+  th:first-child {
+    border-top-left-radius: 10px;
+  }
+  th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+  }
+  td {
+    padding: 10px 20px;
+    background: #f8e391;
+  }
+  tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+  }
+  tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+  }
+  tr td:last-child {
+    border-right: none;
+  }
+  label {
+    color: white;
+  }
+  
+  .double-border-button {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    position: relative;
+    border: 2px solid #f1c40f;
+    color: #f1c40f;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.4s;
+  }
+  .double-border-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.4s;
+  }
+  .double-border-button:hover:after {
+    border-color: #f1c40f;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+  }
+  
+  .glow-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    transition: 0.15s ease-in-out;
+  }
+  .glow-button:hover {
+    box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
+    color: #f137a6;
+    cursor: pointer;
+  }
+  
+  form label,
+  form input {
+    display: block;
+  }
+
+.div_table {
+  display: flex;
+  justify-content: center;
+}
+
+.tableCountainer {
+  width: 50%;
+}
+
+.editTable .editCountainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  font-size: 19px;
+  height: 150px;
+}
+
+.editTable {
+  display: flex;
+  justify-content: center;
+}
